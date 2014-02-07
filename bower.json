@@ -1,0 +1,17 @@
+{
+    "name": "isotope-modulo-columns",
+    "main": "modulo-columns.js",
+    "version": "0.1",
+    "authors": [
+        "Michiel de Wit"
+    ],
+    "description": "moduloColumns layout mode for Isotope 2",
+    "dependencies": {
+        "isotope": ">=2.0.0-beta.8"
+    },
+    "keywords": [
+        "layout",
+        "mode",
+        "isotope"
+    ]
+}

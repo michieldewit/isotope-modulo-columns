@@ -1,7 +1,7 @@
 {
     "name": "isotope-modulo-columns",
     "main": "modulo-columns.js",
-    "version": "0.1",
+    "version": "0.1.0",
     "authors": [
         "Michiel de Wit"
     ],

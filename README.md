@@ -12,3 +12,7 @@ $('#container').isotope({
   }
 });
 ```
+
+## Demo
+
+A demonstration can be found here: http://michieldewit.github.com/isotope-modulo-columns/example

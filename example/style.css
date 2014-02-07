@@ -1,0 +1,99 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
+html {
+    background: #eee;
+    font: normal normal normal 16px/20px "Open Sans",sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5em 0;
+    z-index: 100;
+    background: #2b3138;
+    color: white;
+    font-weight: 700;
+    white-space: nowrap;
+}
+header h1 {
+    display: block;
+    padding: 5px 10px 3px 10px;
+    margin: 0 auto;
+    font-size: inherit;
+}
+
+/* Container and items */
+#container {
+    margin: 4em auto 1em;
+    background: #eee;
+}
+
+.item {
+    display: block;
+    width: 220px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    color: #ccc;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.item.h1 {
+    height: 200px;
+    line-height: 200px;
+}
+.item.h2 {
+    height: 270px;
+    line-height: 270px;
+}
+.item.h3 {
+    height: 160px;
+    line-height: 160px;
+}
+.item.wide {
+    width: 462px;
+}
+.item span {
+}
+
+/** 1 column */
+#container, header h1 {
+    width: 100%;
+}
+@media (max-width: 499px) {
+    .item, .item.wide {
+        width: 100%;
+        margin: 0;
+        border: none;
+        outline: 1px solid #ccc;
+    }
+}
+/* 2 columns */
+@media (min-width: 500px) {
+    #container, header h1 { width: 464px; }
+}
+/* 3 columns */
+@media (min-width: 750px) {
+    #container, header h1 { width: 706px; }
+}
+/* 4 columns */
+@media (min-width: 1000px) {
+    #container, header h1 { width: 948px; }
+}
+/* 5 columns */
+@media (min-width: 1250px) {
+    #container, header h1 { width: 1190px; }
+}
+/* 6 columns */
+@media (min-width: 1500px) {
+    #container, header h1 { width: 1432px; }
+}
+
+

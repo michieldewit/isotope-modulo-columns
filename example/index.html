@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>moduloColumns layout mode for Isotope 2</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
+    <script src="http://isotope.metafizzy.co/beta/isotope.pkgd.min.js" type="text/javascript"></script>
+    <script src="../modulo-columns.js" type="text/javascript"></script>
+</head>
+
+<body>
+<header>
+    <h1>moduloColumns layout mode for Isotope 2</h1>
+</header>
+<div id="container" />
+
+<script type="text/javascript">
+    $(function() {
+        // Create items
+        var container = $('#container'), items = 25;
+        while (items--) {
+            var item = $('<div/>').text(items + 1);
+            item.addClass('item');
+            item.addClass('h' + ((items % 3) + 1));
+            if (items % 7 == 3) {
+                item.addClass('wide');
+            }
+            container.prepend(item);
+        }
+
+        // Activate isotope
+        container.isotope({
+            itemSelector: '.item',
+            layoutMode: 'moduloColumns',
+            moduloColumns: {
+                columnWidth: container.find('.item').not('.wide').get(0),
+                gutter: 20
+            }
+        });
+
+        // Add some interactivity
+        container.find('.item').click(function() {
+            $(this).toggleClass('wide');
+            container.isotope();
+        });
+    });
+</script>
+</body>
+
+</html>

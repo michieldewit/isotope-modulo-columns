@@ -21,7 +21,7 @@
 
             // Add gutter and adjust column width/count accordingly
             var gutter = this.options.gutter;
-            var containerWidth = this.size.width;
+            var containerWidth = this.size.innerWidth;
             this.columnWidth += gutter;
             var cols = this.cols = Math.floor((containerWidth + gutter) / this.columnWidth) || 1;
 
